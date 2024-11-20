@@ -26,56 +26,56 @@ export default function Home() {
       author: "Coca-Cola",
       reward: "Exclusive branded merchandise",
       description: "Capture the essence of Coca-Cola in a digital creation that celebrates shared moments of joy and refreshment. Whether it's an artwork, video, or story, let your imagination flow by highlighting how Coca-Cola brings people together. Top submissions will be featured in our virtual Coca-Cola Gallery, with a chance to win exclusive branded merchandise!",
-      image: "/assets/coke.jpg"
+      image: "assets/coke.jpg"
     },
     {
       title: "Orlando Magic Slam Dunk Contest: \"Virtual Dunk Off\"",
       author: "Orlando Magic",
       reward: "Showcased during an online fan event",
       description: "Step into the virtual arena and show off your best slam dunk moves! Design and submit a 30-second animated clip or storyboard of your avatar performing an epic, crowd-pleasing dunk, complete with Orlando Magic flair. Creativity in choreography and style will score you points with our judges, and winners will be showcased during an online fan event!",
-      image: "/assets/orlandomagic.jpg"
+      image: "assets/orlandomagic.jpg"
     },
     {
       title: "Nike Marathon Arena - \"Run & Innovate Experience\"",
       author: "Nike",
       reward: "Nike gear vouchers",
       description: "Combine technology and athletics in the 'Run & Innovate Experience.' Participants are tasked with designing a concept for the next-gen running shoe, incorporating features that improve performance and environmental sustainability. Present your ideas through sketches or 3D models, and demonstrate the impact on virtual runners in a brief synopsis. Top innovators will receive recognition and Nike gear vouchers!",
-      image: "/assets/nike.jpg"
+      image: "assets/nike.jpg"
     },
     {
       title: "Disney Creativity Arena - \"Story Magic Contest\"",
       author: "Disney",
       reward: "Exclusive Disney memorabilia",
       description: "Bring a touch of Disney magic to life by creating a unique story or animated short inspired by your favorite Disney characters and themes. Whether it's a modern twist on a classic tale or an entirely new adventure, enchant us with your storytelling prowess. Winning entries may have the opportunity to be showcased in a special Disney virtual event, and creators will receive exclusive Disney memorabilia!",
-      image: "/assets/disney.jpg"
+      image: "assets/disney.jpg"
     },
     {
       title: "Apple Innovation Arena - \"App of Tomorrow\"",
       author: "Apple",
       reward: "Apple product gifts",
       description: "Design an app concept that enhances everyday life or solves a modern problem, using Apple's design principles. Participants need to present a user interface mockup and a brief functionality overview. The most creative and impactful ideas will be featured on the CommunityFusion Arena, with potential mentorship opportunities for app development and Apple product gifts for winners!",
-      image: "/assets/apple.jpg"
+      image: "assets/apple.jpg"
     },
     {
       title: "LEGO Constructive Arena - \"Brick Master Builder\"",
       author: "LEGO",
       reward: "Special recognition and digital LEGO exhibition",
       description: "Unleash your creativity with the 'Brick Master Builder' challenge! Design an awe-inspiring LEGO creation either through digital build software or detailed concept sketches. Themes can range from futuristic cities to mythical creatures—wherever your imagination leads. The top builders will receive special recognition, and the winning designs will be built and displayed in a digital LEGO exhibition hall!",
-      image: "/assets/lego.jpg"
+      image: "assets/lego.jpg"
     },
     {
       title: "Gucci Fashion Arena - \"Style Innovator Competition\"",
       author: "Gucci",
       reward: "Brand-exclusive rewards",
       description: "Step onto the virtual fashion stage and design a statement piece or collection that encapsulates Gucci's fusion of tradition and modernity. Use design software or sketches to illustrate your vision, complete with accessorizing elements. Finalists will see their designs virtually showcased in a Gucci-themed runway event and earn brand-exclusive rewards!",
-      image: "/assets/gucci.jpg"
+      image: "assets/gucci.jpg"
     },
     {
       title: "Red Bull Adventure Challenge: \"Wings for Your Day\"",
       author: "Red Bull",
       reward: "Chance to attend a Red Bull extreme sports event or receive branded gear",
       description: "Purchase a can of Red Bull and capture your most adventurous 'gives you wings' moment. Whether you're hiking a mountain, skating through the city, or tackling a challenging project, show how Red Bull fuels your passion. Document your adventure with a creative video or photo series that prominently features Red Bull. The most exhilarating and innovative entries will be showcased on Red Bull's social media, and the top adventurer could win a chance to attend a Red Bull extreme sports event or receive branded gear for their next adventure.",
-      image: "/assets/redbull.jpg"
+      image: "assets/redbull.jpg"
     }
   ];
 
@@ -124,7 +124,7 @@ export default function Home() {
             <CardContent className="p-0">
               <div className="relative aspect-[16/3]">
                 <img
-                  src="/assets/banner.gif"
+                  src="assets/banner.gif"
                   alt="Red Bull Wings for Your Day"
                   className="w-full h-full object-cover"
                 />
@@ -193,7 +193,7 @@ export default function Home() {
             <CardContent className="p-4">
               <div className="flex gap-4">
                 <img
-                  src="/assets/super-redly-gear.jpg"
+                  src="assets/super-redly-gear.jpg"
                   alt="Super Redly Gear"
                   className="w-24 h-24 rounded-lg object-cover"
                 />
