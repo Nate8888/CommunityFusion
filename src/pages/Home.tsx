@@ -115,6 +115,7 @@ export default function Home() {
 
   useEffect(() => {
     if (emblaApi) {
+      setSlideCount(contests.length)
       emblaApi.on('select', () => {
         setCurrentSlide(emblaApi.selectedScrollSnap())
       })

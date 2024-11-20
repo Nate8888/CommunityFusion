@@ -1,9 +1,8 @@
 "use client"
 
 import { useState } from "react"
-import { ArrowLeft, Heart, Users, Clock, Trophy, Home, Award, Gift, DollarSign, User } from 'lucide-react'
+import { ArrowLeft, Heart, Clock, Trophy, Home, Award, Gift, DollarSign, User } from 'lucide-react'
 import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { useNavigate, useLocation } from 'react-router-dom'
@@ -12,7 +11,7 @@ export default function ContestDetail() {
   const location = useLocation()
   const { contest } = location.state
   const { title, author, reward, description, image, prizePool, participants, duration } = contest
-
+  console.log(reward);
   const [isLiked, setIsLiked] = useState(false)
   const [file, setFile] = useState<File | null>(null)
   const [submissionDescription, setSubmissionDescription] = useState("")
