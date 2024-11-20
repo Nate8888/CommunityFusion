@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ChevronLeft, Home, RotateCcw, Zap, Trophy, Award, Gift } from 'lucide-react'
+import { ChevronLeft, Home, Zap, Award, Gift } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { useNavigate } from 'react-router-dom'
@@ -64,7 +64,8 @@ export default function VotingPage() {
   }, [])
 
   const handleVote = (index: number) => {
-    setLastVote(index)
+    setLastVote(index);
+    console.log(lastVote);
     // Here you would typically send the vote to your backend
     console.log(`Voted for submission ${currentPair![index].id}`)
     
@@ -81,15 +82,15 @@ export default function VotingPage() {
     }
   }
 
-  const handleUndo = () => {
-    if (lastVote !== null && pairIndex > 0) {
-      const previousPairIndex = pairIndex - 1
-      setCurrentPair([submissions[previousPairIndex * 2], submissions[previousPairIndex * 2 + 1]])
-      setPairIndex(previousPairIndex)
-      setLastVote(null)
-      setLeftCardIndex(0)
-    }
-  }
+  // const handleUndo = () => {
+  //   if (lastVote !== null && pairIndex > 0) {
+  //     const previousPairIndex = pairIndex - 1
+  //     setCurrentPair([submissions[previousPairIndex * 2], submissions[previousPairIndex * 2 + 1]])
+  //     setPairIndex(previousPairIndex)
+  //     setLastVote(null)
+  //     setLeftCardIndex(0)
+  //   }
+  // }
 
   const toggleLeftCard = () => {
     setLeftCardIndex((prevIndex) => (prevIndex === 0 ? 1 : 0))
@@ -208,7 +209,7 @@ export default function VotingPage() {
             { name: "Rewards", icon: Gift, path: "/rewards" }
           ].map((item, index) => (
             <Button
-              key={item.name}
+              key={item.name + index}
               variant="ghost"
               size="icon"
               className="flex flex-col items-center gap-1 text-white"

@@ -7,7 +7,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Gift, Zap } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
-import { HomeIcon, Trophy, Award } from 'lucide-react'
+import { HomeIcon, Award } from 'lucide-react'
 
 type Reward = {
   id: string

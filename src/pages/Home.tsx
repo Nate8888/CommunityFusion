@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from 'react'
-import { Search, Home as HomeIcon, Trophy, Award, Gift } from 'lucide-react'
+import { Search, Home as HomeIcon, Award, Gift } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import {
