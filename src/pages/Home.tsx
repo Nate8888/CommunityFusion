@@ -47,7 +47,7 @@ const contests = [
     duration: "2 months"
   },
   {
-    title: "Nike Marathon Arena - \"Run & Innovate Experience\"",
+    title: "Nike Marathon Arena - \"Run & Innovate Experience\" now",
     author: "Nike",
     reward: "Nike gear vouchers",
     description: "Combine technology and athletics in the 'Run & Innovate Experience.' Participants are tasked with designing a concept for the next-gen running shoe, incorporating features that improve performance and environmental sustainability. Present your ideas through sketches or 3D models, and demonstrate the impact on virtual runners in a brief synopsis. Top innovators will receive recognition and Nike gear vouchers!",
@@ -57,7 +57,7 @@ const contests = [
     duration: "4 months"
   },
   {
-    title: "Disney Creativity Arena - \"Story Magic Contest\" DIY",
+    title: "Disney Creativity Arena - \"Story Magic Contest\" DIY now",
     author: "Disney",
     reward: "Exclusive Disney memorabilia",
     description: "Bring a touch of Disney magic to life by creating a unique story or animated short inspired by your favorite Disney characters and themes. Whether it's a modern twist on a classic tale or an entirely new adventure, enchant us with your storytelling prowess. Winning entries may have the opportunity to be showcased in a special Disney virtual event, and creators will receive exclusive Disney memorabilia!",
@@ -67,7 +67,7 @@ const contests = [
     duration: "3 months"
   },
   {
-    title: "Apple Innovation Arena - \"App of Tomorrow\" Contest",
+    title: "Apple Innovation Arena - \"App of Tomorrow\" Innovate Contest",
     author: "Apple",
     reward: "Apple product gifts",
     description: "Design an app concept that enhances everyday life or solves a modern problem, using Apple's design principles. Participants need to present a user interface mockup and a brief functionality overview. The most creative and impactful ideas will be featured on the CommunityFusion Arena, with potential mentorship opportunities for app development and Apple product gifts for winners!",
@@ -78,7 +78,7 @@ const contests = [
   },
 
   {
-    title: "Gucci Fashion Arena - \"Style Innovator Competition\"",
+    title: "Gucci Fashion Arena - \"Style Innovator Competition\" Battle",
     author: "Gucci",
     reward: "Brand-exclusive rewards",
     description: "Step onto the virtual fashion stage and design a statement piece or collection that encapsulates Gucci's fusion of tradition and modernity. Use design software or sketches to illustrate your vision, complete with accessorizing elements. Finalists will see their designs virtually showcased in a Gucci-themed runway event and earn brand-exclusive rewards!",
@@ -88,7 +88,7 @@ const contests = [
     duration: "3 months"
   },
   {
-    title: "Red Bull Adventure Challenge: \"Wings for Your Day\"",
+    title: "Red Bull Adventure Challenge: \"Wings for Your Day\" Contest",
     author: "Red Bull",
     reward: "Chance to attend a Red Bull extreme sports event or receive branded gear",
     description: "Purchase a can of Red Bull and capture your most adventurous 'gives you wings' moment. Whether you're hiking a mountain, skating through the city, or tackling a challenging project, show how Red Bull fuels your passion. Document your adventure with a creative video or photo series that prominently features Red Bull. The most exhilarating and innovative entries will be showcased on Red Bull's social media, and the top adventurer could win a chance to attend a Red Bull extreme sports event or receive branded gear for their next adventure.",
@@ -191,9 +191,9 @@ export default function Home() {
                       <div className="p-4">
                         <div className="flex items-center justify-between mb-2">
                           <h3 className="font-bold text-lg text-black">{contest.title}</h3>
-                          <Button variant="ghost" size="icon" className="rounded-full text-red-500 hover:text-red-600">
+                          {/* <Button variant="ghost" size="icon" className="rounded-full text-red-500 hover:text-red-600">
                             ❤️
-                          </Button>
+                          </Button> */}
                         </div>
                         <p className="text-sm text-gray-400">By {contest.author}</p>
                         <p className="text-red-600 font-semibold mt-2">{contest.prizePool}</p>
@@ -210,7 +210,7 @@ export default function Home() {
                 <div
                   key={index}
                   className={`h-2 w-2 rounded-full mx-1 ${
-                    index === currentSlide ? 'bg-red-600' : 'bg-gray-300'
+                    index === currentSlide ? 'bg-red-600' : 'bg-red-600'
                   }`}
                 />
               ))}
