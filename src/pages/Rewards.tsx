@@ -144,8 +144,7 @@ export default function RewardsPage() {
         <div className="flex justify-around items-center max-w-md mx-auto">
           {[
             { name: "Home", icon: HomeIcon, path: "/" },
-            { name: "Your Submissions", icon: Trophy, path: "/contests" },
-            { name: "Ranking", icon: Award, path: "/ranking" },
+            { name: "Arena", icon: Award, path: "/voting" },
             { name: "Rewards", icon: Gift, path: "/rewards" }
           ].map((item, index) => (
             <Button
