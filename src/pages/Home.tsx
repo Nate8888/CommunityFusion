@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from 'react'
-import { Search, Home as HomeIcon, Trophy, Award, Gift } from 'lucide-react'
+import { Search, Home as HomeIcon, Award, Gift } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import {
@@ -246,8 +246,7 @@ export default function Home() {
         <div className="flex justify-around items-center max-w-md mx-auto">
           {[
             { name: "Home", icon: HomeIcon, path: "/" },
-            { name: "Your Submissions", icon: Trophy, path: "/contests" },
-            { name: "Ranking", icon: Award, path: "/ranking" },
+            { name: "Arena", icon: Award, path: "/voting" },
             { name: "Rewards", icon: Gift, path: "/rewards" }
           ].map((item, index) => (
             <Button

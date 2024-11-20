@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { ArrowLeft, Heart, Clock, Trophy, Home, Award, Gift, DollarSign, User } from 'lucide-react'
+import { ArrowLeft, Heart, Clock, Home, Award, Gift, DollarSign, User } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -165,8 +165,7 @@ export default function ContestDetail() {
         <div className="flex justify-around items-center max-w-md mx-auto">
           {[
             { name: "Home", icon: Home, path: "/" },
-            { name: "Your Submissions", icon: Trophy, path: "/contests" },
-            { name: "Ranking", icon: Award, path: "/ranking" },
+            { name: "Arena", icon: Award, path: "/voting" },
             { name: "Rewards", icon: Gift, path: "/rewards" }
           ].map((item, index) => (
             <Button

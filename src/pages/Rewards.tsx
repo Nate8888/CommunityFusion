@@ -7,7 +7,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Gift, Zap } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
-import { HomeIcon, Trophy, Award } from 'lucide-react'
+import { HomeIcon, Award } from 'lucide-react'
 
 type Reward = {
   id: string
@@ -144,8 +144,7 @@ export default function RewardsPage() {
         <div className="flex justify-around items-center max-w-md mx-auto">
           {[
             { name: "Home", icon: HomeIcon, path: "/" },
-            { name: "Your Submissions", icon: Trophy, path: "/contests" },
-            { name: "Ranking", icon: Award, path: "/ranking" },
+            { name: "Arena", icon: Award, path: "/voting" },
             { name: "Rewards", icon: Gift, path: "/rewards" }
           ].map((item, index) => (
             <Button
