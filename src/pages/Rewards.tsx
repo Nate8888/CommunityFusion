@@ -149,7 +149,7 @@ export default function RewardsPage() {
             { name: "Rewards", icon: Gift, path: "/rewards" }
           ].map((item, index) => (
             <Button
-              key={item.name}
+              key={item.name + index}
               variant="ghost"
               size="icon"
               className="flex flex-col items-center gap-1 text-white"
